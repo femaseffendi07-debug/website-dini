@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Sayangkuhh 💗</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe4ec, #fff0f5, #fce1f2);
+      color: #8b4564;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 65px 20px;
+    }
+
+    h1, h2 {
+      color: #d45b91;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      max-width: 550px;
+      margin-bottom: 25px;
+    }
+
+    button {
+      border: none;
+      padding: 13px 25px;
+      border-radius: 30px;
+      background: #ed8bb5;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      margin: 8px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #d45b91;
+      transform: scale(1.05);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(212, 91, 145, 0.12);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    .gallery img {
+      width: 220px;
+      height: 270px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: rotate(-2deg) scale(1.04);
+    }
+
+    .counter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .time-box {
+      background: white;
+      padding: 20px;
+      min-width: 105px;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px rgba(212, 91, 145, 0.1);
+    }
+
+    .time-box strong {
+      display: block;
+      font-size: 25px;
+      color: #d45b91;
+    }
+
+    #pesanHadiah, #pesanKejutan {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #c34d83;
+    }
+
+    footer {
+      padding: 30px;
+      background: rgba(255,255,255,0.5);
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -30px;
+      font-size: 22px;
+      animation: naik 7s linear infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    @keyframes naik {
+      0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .gallery img {
+        width: 42%;
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PEMBUKA -->
+  <section class="hero">
+    <h1>Hai Sayangkuhh! 💗</h1>
+
+    <p>
+      Untuk seseorang yang selalu punya tempat spesial
+      di dalam cerita hidupku.
+    </p>
+
+    <p><b>Kekasihku yang cantik dan manis 🌷</b></p>
+
+    <button onclick="bukaSurat()">
+      Buka hadiah kecil dariku 💌
+    </button>
+  </section>
+
+  <!-- SURAT CINTA -->
+  <section id="surat">
+    <h2>💌 Sebuah Surat Untukmu</h2>
+
+    <div class="card">
+      <p>
+        Hai, Dini Fitriani.
+        <br><br>
+        Aku mungkin tidak selalu bisa memberikan sesuatu
+        yang sempurna. Tapi aku ingin kamu tahu bahwa
+        kehadiranmu adalah salah satu hal indah dalam hidupku.
+        <br><br>
+        Terima kasih sudah menjadi bagian dari perjalanan ini.
+        Terima kasih untuk setiap cerita, tawa, perhatian,
+        dan waktu yang sudah kita lewati bersama.
+        <br><br>
+        Semoga kita selalu punya alasan untuk saling
+        memahami, saling mendukung, dan terus tumbuh
+        menjadi lebih baik.
+        <br><br>
+        Aku sayang kamu. ❤️
+      </p>
+    </div>
+  </section>
+
+  <!-- GALERI FOTO -->
+  <section>
+    <h2>📸 Potongan Cerita Kita</h2>
+
+    <p>Empat foto, banyak kenangan yang tidak terlupakan.</p>
+
+    <div class="gallery">
+      <img src="foto1.jpeg" alt="Foto kenangan pertama">
+      <img src="foto2.jpeg" alt="Foto kenangan kedua">
+      <img src="foto3.jpeg" alt="Foto kenangan ketiga">
+      <img src="foto4.jpeg" alt="Foto kenangan keempat">
+    </div>
+  </section>
+
+  <!-- PENGHITUNG WAKTU -->
+  <section>
+    <h2>⏳ Perjalanan Kita</h2>
+
+    <p>Waktu yang sudah kita lewati bersama sejak 25 Desember 2023.</p>
+
+    <div class="counter">
+      <div class="time-box">
+        <strong id="hari">0</strong>
+        Hari
+      </div>
+
+      <div class="time-box">
+        <strong id="jam">0</strong>
+        Jam
+      </div>
+
+      <div class="time-box">
+        <strong id="menit">0</strong>
+        Menit
+      </div>
+
+      <div class="time-box">
+        <strong id="detik">0</strong>
+        Detik
+      </div>
+    </div>
+  </section>
+
+  <!-- MINI GAME -->
+  <section>
+    <h2>🎁 Pilih Hadiahmu!</h2>
+
+    <p>Ada tiga hadiah kecil yang bisa kamu buka.</p>
+
+    <button onclick="hadiah(1)">🎀 Hadiah 1</button>
+    <button onclick="hadiah(2)">💝 Hadiah 2</button>
+    <button onclick="hadiah(3)">🌷 Hadiah 3</button>
+
+    <div id="pesanHadiah"></div>
+  </section>
+
+  <!-- KEJUTAN TERAKHIR -->
+  <section>
+    <h2>💗 Satu Kejutan Lagi</h2>
+
+    <div class="card">
+      <p>
+        Sebelum kamu menutup halaman ini,
+        ada satu hal yang ingin aku sampaikan.
+      </p>
+
+      <button onclick="kejutan()">
+        Buka kejutan terakhir ❤️
+      </button>
+
+      <div id="pesanKejutan"></div>
+    </div>
+  </section>
+
+  <footer>
+    Dibuat dengan penuh rasa sayang untuk Dini Fitriani 💗
+    <br>
+    25 Desember 2023 — Selamanya dalam cerita kita.
+  </footer>
+
+  <!-- MUSIK -->
+  <audio id="musik" loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // TANGGAL JADIAN
+    const tanggalJadian = new Date(2023, 11, 25);
+
+    // BUKA SURAT DAN PUTAR MUSIK
+    function bukaSurat() {
+      document.getElementById("surat").scrollIntoView({
+        behavior: "smooth"
+      });
+
+      const musik = document.getElementById("musik");
+
+      musik.play().catch(() => {
+        console.log("Musik belum dapat diputar.");
+      });
+    }
+
+    // HITUNG WAKTU BERSAMA
+    function hitungWaktu() {
+      const sekarang = new Date();
+      const selisih = sekarang - tanggalJadian;
+
+      if (selisih < 0) return;
+
+      const detikTotal = Math.floor(selisih / 1000);
+
+      const hari = Math.floor(detikTotal / 86400);
+      const jam = Math.floor((detikTotal % 86400) / 3600);
+      const menit = Math.floor((detikTotal % 3600) / 60);
+      const detik = detikTotal % 60;
+
+      document.getElementById("hari").textContent = hari;
+      document.getElementById("jam").textContent = jam;
+      document.getElementById("menit").textContent = menit;
+      document.getElementById("detik").textContent = detik;
+    }
+
+    setInterval(hitungWaktu, 1000);
+    hitungWaktu();
+
+    // MINI GAME HADIAH
+    function hadiah(n) {
+      const pesan = {
+        1: "Kamu adalah salah satu hal terindah yang pernah hadir dalam hidupku. 💗",
+        2: "Semoga setiap hari selalu ada alasan untuk kita tersenyum bersama. 🌷",
+        3: "Kalau boleh memilih lagi, aku tetap ingin mengenalmu dan membuat banyak cerita bersamamu. ❤️"
+      };
+
+      document.getElementById("pesanHadiah").textContent = pesan[n];
+    }
+
+    // KEJUTAN TERAKHIR
+    function kejutan() {
+      document.getElementById("pesanKejutan").innerHTML =
+        "Dini, terima kasih sudah menjadi bagian dari ceritaku. " +
+        "Semoga perjalanan kita selalu dipenuhi kebahagiaan. " +
+        "I LOVE YOU! ❤️💗🌷";
+    }
+
+    // ANIMASI HATI
+    function buatHati() {
+      const hati = document.createElement("div");
+
+      hati.className = "heart";
+      hati.textContent = "💗";
+      hati.style.left = Math.random() * 100 + "vw";
+      hati.style.animationDuration = (5 + Math.random() * 4) + "s";
+
+      document.body.appendChild(hati);
+
+      setTimeout(() => {
+        hati.remove();
+      }, 9000);
+    }
+
+    setInterval(buatHati, 700);
+  </script>
+
+</body>
+</html>
